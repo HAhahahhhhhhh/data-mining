@@ -21,10 +21,12 @@ def create_hash_functions(num_hash_functions, size_bit_array):
         # note that this should be a unique hash function for all
 
         # BEGIN IMPLEMENTATION
-
+        hash_functions.append(
+            lambda x, index=i: int(sha256((str(index) + x).encode('utf-8')).hexdigest(), 16) % size_bit_array)
         # END IMPLEMENTATION
-
+    # print(hash_functions)
     return hash_functions
+
 
 def add_to_bloom_filter(bloom_filter, hash_functions, bank_account):
     """This function should set the bits in the bloom filter to 1 for each 
@@ -40,8 +42,10 @@ def add_to_bloom_filter(bloom_filter, hash_functions, bank_account):
     """
 
     # BEGIN IMPLEMENTATION
-
-    # END IMPLEMENTATION
+    for hash_function in hash_functions:
+        index = hash_function(bank_account)
+        bloom_filter[index] = 1
+        # END IMPLEMENTATION
 
     return bloom_filter
 
@@ -58,10 +62,14 @@ def check_bloom_filter(bloom_filter, hash_functions, bank_account):
     """
 
     # BEGIN IMPLEMENTATION
-
-    # END IMPLEMENTATION
+    for hash_function in hash_functions:
+        index = hash_function(bank_account)
+        if bloom_filter[index] == 0:
+            return False
+            # END IMPLEMENTATION
 
     return True
+
 
 if __name__ == "__main__":
     # This section can be used to debug your submission
