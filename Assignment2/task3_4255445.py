@@ -24,7 +24,8 @@ class FlajoletMartin:
         trailing_zeros_count = 0
 
         # BEGIN IMPLEMENTATION
-
+        binary_rep = bin(x)[2:]  # Remove the '0b' prefix from the binary representation
+        trailing_zeros_count = len(binary_rep) - len(binary_rep.rstrip('0'))
         # END IMPLEMENTATION
 
         return trailing_zeros_count
@@ -38,7 +39,11 @@ class FlajoletMartin:
             #       Update the maximum trailing zero value of the current hash function
 
             # BEGIN IMPLEMENTATION
-
+            hash_value = self.hash_function(item, i)
+            # Count the number of trailing zeros in the hash value
+            trailing_zeros = self.count_trailing_zeros(hash_value)
+            # Update the maximum trailing zeros for this hash function
+            self.max_trailing_zeros[i] = max(self.max_trailing_zeros[i], trailing_zeros)
             # END IMPLEMENTATION
 
 
