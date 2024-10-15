@@ -40,9 +40,7 @@ class FlajoletMartin:
 
             # BEGIN IMPLEMENTATION
             hash_value = self.hash_function(item, i)
-            # Count the number of trailing zeros in the hash value
             trailing_zeros = self.count_trailing_zeros(hash_value)
-            # Update the maximum trailing zeros for this hash function
             self.max_trailing_zeros[i] = max(self.max_trailing_zeros[i], trailing_zeros)
             # END IMPLEMENTATION
 
