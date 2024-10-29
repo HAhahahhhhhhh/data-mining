@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ccbe75f-c312-42a2-9145-2acc2d247089" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignment4/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment3/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/task1_4255445.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment3/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/task2_4255445.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment3/task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/task3_4255445.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment3/task4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/task4_4255445.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment3/task5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/task5_4255445.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/PA4_4255445.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/PA4_4255445.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +253,7 @@
       <workItem from="1728396314378" duration="623000" />
       <workItem from="1728991279126" duration="1722000" />
       <workItem from="1730020710833" duration="8273000" />
-      <workItem from="1730205133865" duration="19021000" />
+      <workItem from="1730205133865" duration="23275000" />
     </task>
     <servers />
   </component>
@@ -275,7 +270,7 @@
     <SUITE FILE_PATH="coverage/data_mining$task5.coverage" NAME="task5 Coverage Results" MODIFIED="1728992708981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment3" />
     <SUITE FILE_PATH="coverage/data_mining$task2.coverage" NAME="task2 Coverage Results" MODIFIED="1728991884494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment3" />
     <SUITE FILE_PATH="coverage/data_mining$task2_4255445.coverage" NAME="task2_4255445 Coverage Results" MODIFIED="1728396446235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment2" />
-    <SUITE FILE_PATH="coverage/data_mining$PA4_4255445__1_.coverage" NAME="PA4_4255445 (1) Coverage Results" MODIFIED="1730230422868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment4" />
+    <SUITE FILE_PATH="coverage/data_mining$PA4_4255445__1_.coverage" NAME="PA4_4255445 (1) Coverage Results" MODIFIED="1730239961970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment4" />
     <SUITE FILE_PATH="coverage/data_mining$test.coverage" NAME="test Coverage Results" MODIFIED="1730228792102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment4" />
     <SUITE FILE_PATH="coverage/data_mining$task3_4255445__1_.coverage" NAME="task3_4255445 (1) Coverage Results" MODIFIED="1728396454893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment2" />
   </component>

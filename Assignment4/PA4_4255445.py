@@ -47,8 +47,8 @@ print('\n\n******* Section 3 *******\n')
 # SECTION 3
 sd = pysubdisc.singleNominalTarget(data, 'target', 'gr50K')
 sd.qualityMeasure = 'CORTANA_QUALITY'
-sd.searchDepth = 2
-sd.coverageMinimum = 10  # Set minimum coverage to 10 instances
+sd.refinementDepth = 2
+sd.qualityMeasureMinimum = 0.25
 
 sd.run(verbose=False)
 
@@ -61,8 +61,9 @@ print('\n\n******* Section 4 *******\n')
 # SECTION 4
 sd_no_filter = pysubdisc.singleNominalTarget(data, 'target', 'gr50K')
 sd_no_filter.qualityMeasure = 'CORTANA_QUALITY'
-sd.searchDepth = 2
-sd_no_filter.filterSubgroups = False  # Disable filtering
+sd_no_filter.refinementDepth = 2
+sd_no_filter.qualityMeasureMinimum = 0.25
+
 
 sd_no_filter.run(verbose=False)
 
@@ -81,7 +82,7 @@ print('\n\n******* Section 5 *******\n')
 sd = pysubdisc.singleNominalTarget(data, 'target', 'gr50K')
 sd.qualityMeasure = 'COVERAGE'  # Use a valid quality measure
 sd.qualityMeasureMinimum = 0.0  # Set minimum quality to 0.0
-sd.searchDepth = 2
+sd.refinementDepth = 2
 
 sd.run(verbose=False)
 
@@ -94,7 +95,8 @@ print('\n\n******* Section 6 *******\n')
 sd = pysubdisc.singleNominalTarget(data, 'target', 'gr50K')
 sd.qualityMeasure = 'COVERAGE'  # Use a valid quality measure
 sd.coverageMinimum = 5  # Minimum coverage set to 5 instances
-sd.searchDepth = 2
+sd.qualityMeasureMinimum = 3
+sd.refinementDepth = 2
 sd.run(verbose=False)
 
 print(sd.asDataFrame())
@@ -104,7 +106,7 @@ print('\n\n******* Section 7 *******\n')
 
 # SECTION 7
 sd = pysubdisc.singleNumericTarget(data, 'age')  # Switch to numeric target (age)
-sd.searchDepth = 2
+sd.refinementDepth = 2
 sd.qualityMeasureMinimum = 0.0  # Set minimum quality to 0.0
 sd.coverageMinimum = len(data) * 0.1  # Set coverage to 10% of the dataset
 
@@ -120,7 +122,7 @@ print('\n\n******* Section 8 *******\n')
 # run 100 swap-randomised SD runs in order to determine the minimum required quality to reach a significance level alpha = 0.05
 sd = pysubdisc.singleNominalTarget(data, 'target', 'gr50K')
 sd.swapRandomizedRuns = 100  # Set the number of swap-randomized runs
-sd.searchDepth = 2
+sd.refinementDepth = 2
 sd.run(verbose=False)
 
 print("Minimum quality for significance: ", sd.qualityMeasureMinimum)
@@ -133,13 +135,12 @@ print('\n\n******* Section 9 *******\n')
 
 # Load the Ames Housing data
 data = pandas.read_csv('ameshousing.txt')
-
 # Examine input data
 table = pysubdisc.loadDataFrame(data)
 print(table.describeColumns())
 
 sd = pysubdisc.singleNumericTarget(data, 'SalePrice')
-
+sd.refinementDepth = 1
 sd.run(verbose=False)
 
 # Print first subgroup
